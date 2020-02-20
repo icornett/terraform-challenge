@@ -1,23 +1,15 @@
 # Challenge
-In this Terraform challenge, you will have to deploy a few infrastructure components to two different Cloud providers: [Amazon Web Services](https://aws.amazon.com/) and [Google Cloud Platform](https://cloud.google.com/). You do not need to be an expert in any of these platforms as the focus is to learn Terraform. However, any experience in any of these platforms will certainly be helpful.
+In this Terraform challenge, you will have to deploy a few infrastructure components to the three major Cloud providers: [Amazon Web Services](https://aws.amazon.com/), [Google Cloud Platform](https://cloud.google.com/), [Microsoft Azure](https://azure.microsoft.com). You do not need to be an expert in any of these platforms as the focus is to learn Terraform. However, any experience in any of these platforms will certainly be helpful.
 
 In order to help you build the final solution, this challenge will have different stages. The more stages you go through, the more complex your infrastructure will become and the closer you will be to the final solution.
 
-For this challenge, we will be using [Terraform](https://www.terraform.io/docs/index.html) **0.11.7**.
+For this challenge, we will be using [Terraform](https://www.terraform.io/docs/index.html) **0.12.21**.
 
 # FAQ
 
 ## I did not attend the Dojo. How can I take this challenge?
 
 To take this challenge, you will have to provision the same base infrastructure Slalom provided the attendees during the event. Follow the tutorial in the `run-your-own-dojo` folder to provision your own base infrastructure before proceeding.
-
-## I heard that Terraform 0.12 is coming out soon. Will we use it?
-
-If you have been working with Terraform for a while, you might have heard that Hashicorp is planning a big release with Terraform 0.12. We will not use 0.12 in this Dojo for a couple of reasons:
-
-* The only way to use 0.12 at the moment is to compile from source. In order to guarantee the quality of the event, we will use a stable version.
-* Although quite a few syntax changes will be introduced, we highly recommend you learn the "old" syntax as that's the syntax you will find in all Terraform codebases at the moment.
-* The overall syntax will remain the same, so we can guarantee you will learn Terraform regardless of the version.
 
 # WSL + Docker for Windows
 
