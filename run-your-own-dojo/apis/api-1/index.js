@@ -7,11 +7,18 @@ const fs = require('fs');
 app.get('/', function(req, response) {
     request(config.api2_url, { json: true }, (err, res, body) => {
         if (err) {
-            response.send('API 1 is running fine. But I was not able to reach API 2 due to ' + err);
+            response.send('AWS API is running fine. But I was not able to reach GCP API due to ' + err);
         } else {
-            response.send('API 1 is running fine and managed to reach out to API 2. Well done!');
+            response.send('AWS API is running fine and managed to reach out to GCP API. Well done!');
         }
     });
+    request(config.api3_url, { json: true }, (err, res, body) => {
+        if (err) {
+            response.send('AWS API is running fine. But I was not able to reach Azure API due to ' + err);
+        } else {
+            response.send('AWS API is running fine and managed to reach out to Azure API. Well done!');
+        }
+    });   
 });
 
 app.get('/config', function(req, res) {
